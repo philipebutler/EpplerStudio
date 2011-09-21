@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpplerIO", "EpplerIO\Eppler
 EndProject
 Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "Packages", "Packages.mdproj", "{5238D503-E8F5-4093-9315-853305226028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpplerCommon", "EpplerCommon\EpplerCommon.csproj", "{1A4464C6-650D-4B8E-A280-8F298788015E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{11AF1AFA-0E73-4185-AA45-49351F35C159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11AF1AFA-0E73-4185-AA45-49351F35C159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11AF1AFA-0E73-4185-AA45-49351F35C159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4464C6-650D-4B8E-A280-8F298788015E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4464C6-650D-4B8E-A280-8F298788015E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4464C6-650D-4B8E-A280-8F298788015E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4464C6-650D-4B8E-A280-8F298788015E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5238D503-E8F5-4093-9315-853305226028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5238D503-E8F5-4093-9315-853305226028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
