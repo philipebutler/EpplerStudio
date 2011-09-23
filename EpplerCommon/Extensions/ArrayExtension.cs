@@ -2,14 +2,11 @@ using System;
 
 namespace EpplerCommon
 {
+	namespace Extensions{
 	public static class ArrayExtensions
 	{
-		public ArrayExtensions ()
-		{
-		}
 		
-		[System.Runtime.CompilerServices.Extension()]
-		public object[] SubArray(object[] a, int StartElement, int EndElement)
+		public static object[] SubArray(this object[] a, int StartElement, int EndElement)
 		{
 			object[] b = new object[EndElement - StartElement + 1];
 			int j = 0;
@@ -19,6 +16,7 @@ namespace EpplerCommon
 			}
 			return b;
 		}
+	}
 	}
 }
 

@@ -36,6 +36,13 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Output.cs" />
+    <Compile Include="Word.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\EpplerCommon\EpplerCommon.csproj">
+      <Project>{1A4464C6-650D-4B8E-A280-8F298788015E}</Project>
+      <Name>EpplerCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -1,24 +1,12 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EpplerIO\AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EpplerCommon/Extensions/StringExtension.cs">
     <Files>
-      <File FileName="EpplerIO\Input.cs" Line="3" Column="2" />
-      <File FileName="EpplerIO\Output.cs" Line="1" Column="1" />
-      <File FileName="EpplerIO\AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="EpplerIO/Input.cs" Line="26" Column="1" />
+      <File FileName="EpplerIO/Output.cs" Line="1" Column="1" />
+      <File FileName="EpplerCommon/Extensions/ArrayExtension.cs" Line="1" Column="1" />
+      <File FileName="EpplerCommon/Extensions/StringExtension.cs" Line="23" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="EpplerIO" expanded="True" />
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

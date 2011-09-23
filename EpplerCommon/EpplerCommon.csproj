@@ -37,7 +37,11 @@
     <Compile Include="IEpplerCard.cs" />
     <Compile Include="CardType.cs" />
     <Compile Include="IFwords.cs" />
-    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Extensions\ArrayExtension.cs" />
+    <Compile Include="WordFormat.cs" />
+    <Compile Include="WordPosition.cs" />
+    <Compile Include="IEpplerWord.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
