@@ -37,6 +37,9 @@
     <Compile Include="Input.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Word.cs" />
+    <Compile Include="WordSeries.cs" />
+    <Compile Include="Cards\ABSZ.cs" />
+    <Compile Include="Cards\EpplerCard.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -44,5 +47,8 @@
       <Project>{1A4464C6-650D-4B8E-A280-8F298788015E}</Project>
       <Name>EpplerCommon</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cards\" />
   </ItemGroup>
 </Project>
