@@ -4,7 +4,7 @@ namespace EpplerCommon
 {
 	public interface IFwords
 	{
-		void Add();
+		void Add(IEpplerWord word);
 		void Remove(int index);
 		string getFwords();
 	}

@@ -1,5 +1,6 @@
 using System;
 using EpplerCommon;
+using EpplerCommon.Extensions;
 
 namespace EpplerIO
 {
@@ -26,30 +27,30 @@ namespace EpplerIO
 			words = new WordSeries();
 		}
 		
-		public override bool MultipleAllowed
+		new public bool MultipleAllowed
 		{
 			get 
 			{
 				return  false;
-			}
+			} 
 		}
 	
-		public void Load(string card)
+		new public void Load(string card)
 		{
+            string localNUPE = card.Substring(5, 1);
 			this.Name = card.Substring(0,4);
-			this.NUPE = card.Substring(5,1).ToInteger;
+			this.NUPE = Convert.ToInt32(localNUPE);
 			
 			try
 			{
 				Word newWord;
 				for(int i = 10;i<=card.Length-1;i += 5)
 				{
-					switch(i)
-					{
-					case 15 :
-							newWord = new Word {Name = "ABFA", Position = WordPosition.F2,Format = WordFormat.F5p2,Value = card.Substring(i,5).ToSingle};
-							words.Add(newWord);
-					}
+                    if (i == 15)
+                    {
+                        newWord = new Word { Name = "ABFA", Position = WordPosition.F2, Format = WordFormat.F5p2, Value = Convert.ToSingle(card.Substring(i, 5)) };
+                        words.Add(newWord);
+                    }
 				}
 			}catch (Exception ex){
 				//TODO: get output of ex.message
@@ -61,9 +62,9 @@ namespace EpplerIO
 			string fwords = string.Empty;
 			foreach( Word w in words.Words)
 			{
-				fwords += w.ToString;
+				fwords += w.ToString();
 			}
-			return Name + NUPA.ToString + NUPE.ToString + NUPI.ToString + NUPU.ToString + fwords; 
+			return Name + NUPA.ToString() + NUPE.ToString() + NUPI.ToString() + NUPU.ToString() + fwords; 
 		}
 	}
 }

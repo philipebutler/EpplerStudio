@@ -7,17 +7,33 @@ namespace EpplerIO
 	{
 		public EpplerCard ()
 		{
-			Deprecated = false;
+			this.deprecated = false;
 		}
-		
-		public string Name {get; set;}
-		public string Description {get; set;}
-		public CardType CardType {get; set;}
-		public abstract bool MultipleAllowed {get;}
-		public bool Deprecated{get;set;}
-		
+
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public CardType CardType { get; set; }
+
+        private bool deprecated;
+        public bool Deprecated
+        { 
+            get{
+                return deprecated;
+            }
+            set
+            {
+                deprecated = value;
+            }
+        }
+            
+        private bool multipleAllowed;
+        public bool MultipleAllowed
+        {
+            get { return multipleAllowed; }
+        }
+
 		private int nupu;
-		public int NUPU
+        public int NUPU
 		{ 
 			get
 			{
@@ -35,7 +51,7 @@ namespace EpplerIO
 		}
 		
 		private int nupa;
-		public int NUPA
+        public int NUPA
 		{
 			get
 			{
@@ -53,7 +69,7 @@ namespace EpplerIO
 		}
 		
 		private int nupe;
-		public int NUPE
+        public int NUPE
 		{
 			get
 			{
@@ -71,7 +87,7 @@ namespace EpplerIO
 		}
 		
 		private int nupi;
-		public int NUPI
+        public int NUPI
 		{
 			get
 			{
@@ -85,9 +101,18 @@ namespace EpplerIO
 				}
 			}
 		}
-		
-		public IFwords Fwords {get; set;}
 
-	}
+        public IFwords Fword { get; set; }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Load(string Card)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 

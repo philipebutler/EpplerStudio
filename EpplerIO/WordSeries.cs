@@ -10,9 +10,10 @@ namespace EpplerIO
 		{
 
 		}
-		
-		private List<Word> words;
-		public List<Word> Words {
+
+        private List<IEpplerWord> words;
+        public List<IEpplerWord> Words
+        {
 			get
 			{
 				return words;
@@ -31,14 +32,14 @@ namespace EpplerIO
 				Words.Add(new Word(value));
 			}
 		}
-		
-		public void Add(EpplerIO.Word word)
-		{
-			if(Words.Count <= 14)
-			{
-				Words.Add(word);
-			}
-		}
+
+        public void Add(IEpplerWord word)
+        {
+            if (words.Count <= 14)
+            {
+                words.Add(word);
+            }
+        }
 		
 		public void RemoveRange(int index,int count)
 		{
@@ -49,7 +50,6 @@ namespace EpplerIO
 		{
 			return Words.ToString();
 		}
-		
-	}
+    }
 }
 

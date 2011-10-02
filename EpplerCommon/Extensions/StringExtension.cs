@@ -31,6 +31,18 @@ namespace EpplerCommon
 			
 			return s;
 		}
+
+        public static int ToInteger(this string s)
+        {
+            try
+            {
+                return s.ToInteger();
+            }
+            catch (Exception ex)
+            {
+                return new int();
+            }
+        }
 	}
 }
 
