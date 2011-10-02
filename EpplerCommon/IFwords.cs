@@ -5,7 +5,7 @@ namespace EpplerCommon
 	public interface IFwords
 	{
 		void Add();
-		void Remove();
+		void Remove(int index);
 		string getFwords();
 	}
 }

@@ -11,7 +11,13 @@ namespace EpplerIO
 
 		}
 		
-		public List<Word> Words {get;}
+		private List<Word> words;
+		public List<Word> Words {
+			get
+			{
+				return words;
+			}
+		}
 		
 		public void Remove(int index)
 		{
@@ -26,7 +32,7 @@ namespace EpplerIO
 			}
 		}
 		
-		public void Add(IEpplerWord word)
+		public void Add(EpplerIO.Word word)
 		{
 			if(Words.Count <= 14)
 			{
@@ -41,7 +47,7 @@ namespace EpplerIO
 		
 		public string getFwords()
 		{
-			return Words.ToString;
+			return Words.ToString();
 		}
 		
 	}

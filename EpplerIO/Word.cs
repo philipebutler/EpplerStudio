@@ -21,42 +21,43 @@ namespace EpplerIO
 			
 		}
 		
+		private Single value;
 		public Single Value 
 		{
 			get{
 				
-				return Value;
+				return value;
 			}
 			set {
 				if (value > 999) 
 				{
 					throw new Exception("Fword value " + value + " is not valid");
 				}else{
-					Value = value;
+					this.value = value;
 				}
 			}
 		}
 		
-		public WordFormat Format;
-		public WordPosition Position;
-		public string Name;
+		public WordFormat Format {get; set;}
+		public WordPosition Position{get; set;}
+		public string Name {get; set;}
 		
 		public int ToInteger()
 		{
-			string StringValue = Value.ToString;
-			string wholeString = StringValue.Split(".").SubArray(0,0).ToString;
-			string decimalString = StringValue.Split(".").SubArray(1,1).ToString;
+			string StringValue = Value.ToString();
+			string wholeString = StringValue.Split(System.Convert.ToChar(".")).SubArray(0,0).ToString();
+			string decimalString = StringValue.Split(System.Convert.ToChar(".")).SubArray(1,1).ToString();
 			
 			
 			return System.Convert.ToInt32(wholeString + decimalString.Substring(0,2));
 		}
 		
 		
-		public string ToString()
+		public override string ToString()
 		{
 			string result = string.Empty;
 			string frontSpace  = string.Empty;
-			string stringValue = Value.ToString;
+			string stringValue = Value.ToString();
 			bool hasDecimal = stringValue.Contains(".");
 			
 			if(hasDecimal)
@@ -66,7 +67,7 @@ namespace EpplerIO
 					if(i >= stringValue.Length)
 					{
 						frontSpace += " ";
-					}else if(!stringValue.Substring(i,1) == "."){
+					}else if(stringValue.Substring(i,1) != "."){
 						result = stringValue.Substring(i,1) + result;
 					}
 				}

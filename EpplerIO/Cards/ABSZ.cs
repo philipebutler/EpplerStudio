@@ -26,7 +26,7 @@ namespace EpplerIO
 			words = new WordSeries();
 		}
 		
-		public bool MultipleAllowed
+		public override bool MultipleAllowed
 		{
 			get 
 			{
@@ -56,7 +56,7 @@ namespace EpplerIO
 			}
 		}
 	
-		public string ToString()
+		public override string ToString()
 		{
 			string fwords = string.Empty;
 			foreach( Word w in words.Words)

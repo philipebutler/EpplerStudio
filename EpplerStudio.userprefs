@@ -1,14 +1,18 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EpplerIO/Word.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EpplerIO/WordSeries.cs">
     <Files>
       <File FileName="EpplerIO/Input.cs" Line="26" Column="1" />
       <File FileName="EpplerIO/Output.cs" Line="1" Column="1" />
-      <File FileName="EpplerCommon/Extensions/ArrayExtension.cs" Line="23" Column="1" />
-      <File FileName="EpplerCommon/Extensions/StringExtension.cs" Line="23" Column="3" />
+      <File FileName="EpplerCommon/Extensions/ArrayExtension.cs" Line="1" Column="1" />
+      <File FileName="EpplerCommon/Extensions/StringExtension.cs" Line="1" Column="1" />
       <File FileName="EpplerCommon/IEpplerCard.cs" Line="1" Column="1" />
-      <File FileName="EpplerCommon/IEpplerWord.cs" Line="17" Column="1" />
-      <File FileName="EpplerIO/Word.cs" Line="107" Column="4" />
+      <File FileName="EpplerCommon/IEpplerWord.cs" Line="1" Column="1" />
+      <File FileName="EpplerIO/Word.cs" Line="97" Column="8" />
+      <File FileName="EpplerIO/WordSeries.cs" Line="7" Column="22" />
+      <File FileName="EpplerIO/Cards/ABSZ.cs" Line="56" Column="5" />
+      <File FileName="EpplerIO/Cards/EpplerCard.cs" Line="38" Column="18" />
+      <File FileName="EpplerCommon/IFwords.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
