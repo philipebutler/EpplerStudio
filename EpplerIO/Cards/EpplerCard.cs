@@ -5,6 +5,8 @@ namespace EpplerIO
 {
 	public abstract class EpplerCard : IEpplerCard
 	{
+        private WordSeries words;
+
 		public EpplerCard ()
 		{
 			this.deprecated = false;
@@ -106,7 +108,13 @@ namespace EpplerIO
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            string fwords = null;
+            foreach (Word w in words.Words)
+            {
+                fwords += w.ToString();
+            }
+
+            return Name + NUPA.ToString() + NUPE.ToString() + NUPI.ToString() + NUPU.ToString() + fwords;
         }
 
         public void Load(string Card)

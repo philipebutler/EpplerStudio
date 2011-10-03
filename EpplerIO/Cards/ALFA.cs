@@ -9,12 +9,12 @@ namespace EpplerIO.Cards
     {
         private WordSeries words;
 
-        public void ALFA()
+        public ALFA()
         {
             this.init();
         }
 
-        public void ALFA(string cardString)
+        public ALFA(string cardString)
         {
             this.init();
             this.Load(cardString);

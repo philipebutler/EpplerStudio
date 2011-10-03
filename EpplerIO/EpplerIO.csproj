@@ -57,6 +57,8 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Cards\ALFA.cs" />
     <Compile Include="Cards\CDCL.cs" />
+    <Compile Include="Cards\DIAG.cs" />
+    <Compile Include="Cards\FLAP.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Word.cs" />
