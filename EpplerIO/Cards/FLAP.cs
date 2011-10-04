@@ -15,7 +15,7 @@ namespace EpplerIO.Cards
             CardType = EpplerCommon.CardType.AirfoilAnalysis;
             Name = "FLAP";
             Description = "Switches the program from design mode to analysis mode, required to run panel method if no FXPR card is used.";
-            words = new WordSeries;
+            words = new WordSeries();
         }
 
         new public bool MultipleAllowed

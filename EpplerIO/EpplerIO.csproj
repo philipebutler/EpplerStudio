@@ -59,6 +59,12 @@
     <Compile Include="Cards\CDCL.cs" />
     <Compile Include="Cards\DIAG.cs" />
     <Compile Include="Cards\FLAP.cs" />
+    <Compile Include="Cards\FLZW.cs" />
+    <Compile Include="Cards\FXPR.cs" />
+    <Compile Include="Cards\PAN.cs" />
+    <Compile Include="Cards\PLW.cs" />
+    <Compile Include="Cards\PLWA.cs" />
+    <Compile Include="Cards\PUXY.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Word.cs" />
