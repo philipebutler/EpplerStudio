@@ -65,6 +65,9 @@
     <Compile Include="Cards\PLW.cs" />
     <Compile Include="Cards\PLWA.cs" />
     <Compile Include="Cards\PUXY.cs" />
+    <Compile Include="Cards\RE.cs" />
+    <Compile Include="Cards\STRD.cs" />
+    <Compile Include="Cards\STRK.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Word.cs" />
